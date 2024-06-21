@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Caption and Source Link</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .image-container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .image-container figcaption {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        .image-container a {
+            display: block;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .image-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <figure>
+            <img src="https://example.com/image.jpg" alt="A beautiful scenery">
+            <figcaption>A beautiful scenery</figcaption>
+            <a href="https://example.com" target="_blank">Image Source</a>
+        </figure>
+    </div>
+</body>
+</html>

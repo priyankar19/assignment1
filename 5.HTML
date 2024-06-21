@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Top 5 Favorite Movies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        ol {
+            counter-reset: item;
+        }
+        ol > li {
+            counter-increment: item;
+            margin-bottom: 20px;
+        }
+        ol > li::before {
+            content: counter(item) ". ";
+            font-weight: bold;
+        }
+        ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Top 5 Favorite Movies</h1>
+    <ol>
+        <li>
+            The Shawshank Redemption
+            <ul>
+                <li>Year of Release: 1994</li>
+                <li>Main Actors: Tim Robbins, Morgan Freeman</li>
+                <li>Description: Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</li>
+            </ul>
+        </li>
+        <li>
+            The Godfather
+            <ul>
+                <li>Year of Release: 1972</li>
+                <li>Main Actors: Marlon Brando, Al Pacino, James Caan</li>
+                <li>Description: The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</li>
+            </ul>
+        </li>
+        <li>
+            The Dark Knight
+            <ul>
+                <li>Year of Release: 2008</li>
+                <li>Main Actors: Christian Bale, Heath Ledger, Aaron Eckhart</li>
+                <li>Description: When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.</li>
+            </ul>
+        </li>
+        <li>
+            Pulp Fiction
+            <ul>
+                <li>Year of Release: 1994</li>
+                <li>Main Actors: John Travolta, Uma Thurman, Samuel L. Jackson</li>
+                <li>Description: The lives of two mob hitmen, a boxer, a gangster, and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</li>
+            </ul>
+        </li>
+        <li>
+            The Lord of the Rings: The Return of the King
+            <ul>
+                <li>Year of Release: 2003</li>
+                <li>Main Actors: Elijah Wood, Viggo Mortensen, Ian McKellen</li>
+                <li>Description: Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.</li>
+            </ul>
+        </li>
+    </ol>
+</body>
+</html>
